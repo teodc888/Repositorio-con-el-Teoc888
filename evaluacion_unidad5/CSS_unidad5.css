@@ -1,0 +1,506 @@
+body {
+  margin: 0px;
+  background-color: #ebebe0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+section,
+footer {
+  width: 85%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background-color: #fff;
+  color: #474747;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  letter-spacing: 8px;
+  margin-left: 80px;
+}
+#menu ul {
+  margin-right: 40px;
+}
+#menu ul li {
+  display: inline;
+  margin-left: 8px;
+}
+#menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #474747;
+  padding: 6px;
+  padding-bottom: 1px;
+  transition: all 0.51s linear;
+}
+/*#menu ul li a:hover,
+#menu ul li a:active{
+    letter-spacing: 1px;
+}
+#menu ul li a:after,
+#menu ul li a:before{
+    backface-visibility: hidden;
+    border: 1px solid rgba(red, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+#menu ul li a:hover:after,
+#menu ul li a:hover:before{
+    backface-visibility: hidden;
+    border-color: red;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+#menu ul li a:hover:before{
+    bottom: auto;
+    top: 0;
+    width: 70%;
+}*/
+#menu ul li a:hover,
+#menu ul li a:active {
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ec0909;
+}
+#caja_fija {
+  height: 48px;
+  background-color: #222;
+  color: #e3e3e3;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 30;
+}
+#caja_fija p {
+  margin-left: 80px;
+}
+#imagen_boton {
+  height: 500px;
+  background-image: url(imagenes/portada.jpg);
+  background-size: cover;
+}
+#imagen_boton div {
+  position: relative;
+  top: 75%;
+  left: 10%;
+}
+#imagen_boton div a {
+  padding: 20px;
+  background-color: #474747;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.35s linear;
+  z-index: 10;
+}
+#imagen_boton div a:hover {
+  background-color: #b1aaaa;
+}
+#datos_paciente {
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+#datos_paciente aside {
+  margin: 3%;
+}
+#nosotros {
+  height: 550px;
+  background-color: #fff;
+}
+#nosotros div {
+  float: left;
+  margin-left: 0.334%;
+  margin-top: 2%;
+  height: 80%;
+  width: 33%;
+  background-color: #ec0909;
+}
+#nosotros div h3 {
+  text-align: center;
+  height: 5%;
+  margin: 5% 20%;
+  background-color: #000;
+}
+#nosotros div p {
+  text-align: center;
+  height: 80%;
+  background-color: #000;
+}
+#turnos {
+  height: 300px;
+  background-color: #b1aaaa;
+  display: flex;
+  align-items: center;
+}
+#nav {
+  height: 40%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+#nav a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 25%;
+  background-color: black;
+  margin: 1%;
+  border-radius: 20px;
+}
+#ubicaciones {
+  height: 250px;
+  background-color: rgba(255, 247, 247, 0.966);
+}
+#mapa {
+  background-image: url(imagenes/maps.jpg);
+  height: 250px;
+  width: 200px;
+  float: right;
+  margin-top: 0px;
+}
+.titulo {
+  position: relative;
+  top: 5%;
+  left: 1%;
+}
+.titulo h3 {
+  background-color: #000;
+  width: 180px;
+  height: 30px;
+}
+.provincias {
+  position: relative;
+  top: 8%;
+  left: 2%;
+}
+.provincias a {
+  text-decoration: none;
+  display: block;
+  background-color: #000;
+  height: 20px;
+  width: 320px;
+  margin: 3px;
+}
+#contactanos {
+  height: 500px;
+  background-color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.up {
+  position: relative;
+  top: 10%;
+  background-color: #fff;
+  height: 0px;
+  animation-name: swipp-up;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+.up:hover {
+  animation-play-state: paused;
+}
+.up a {
+  text-decoration: none;
+  background-color: #474747;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 15px;
+}
+@keyframes swipp-up {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 5%;
+  }
+  100% {
+    top: 2.5%;
+  }
+}
+.redes {
+  position: relative;
+  top: 35%;
+  height: 0px;
+}
+.redes a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 5%;
+}
+.whatsapp {
+  background-image: url(imagenes/wsp2.png);
+  background-size: cover;
+}
+.instagram {
+  background-image: url(imagenes/instagram3.jpg);
+  background-size: cover;
+}
+#menu_desplegable{
+  display: none;
+}
+
+@media (max-width: 1023px) and (min-width: 600px) {
+  header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    font-size: 0.75rem;
+  }
+  #logo {
+    margin: 0px;
+  }
+  #menu ul {
+    margin-top: 0px;
+  }
+  #menu ul li {
+    margin: 0;
+  }
+  #caja_fija {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  #caja_fija p {
+    margin-left: 0px;
+  }
+  #imagen_boton {
+    background-image: url(imagenes/portada2.jpg);
+    background-size: cover;
+  }
+  #imagen_boton div {
+    top: 85%;
+  }
+  #imagen_boton div a {
+    font-size: 0.7rem;
+    padding: 15px;
+    background-color: hsl(200, 76%, 73%);
+  }
+  #nosotros {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #nosotros div {
+    margin: 5%;
+    width: auto;
+    height: 300px;
+  }
+  #datos_paciente {
+    height: auto;
+  }
+  #datos_paciente aside {
+    font-size: 0.78rem;
+  }
+  #turnos {
+    justify-content: center;
+    height: auto;
+  }
+  #nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 5%;
+  }
+  #nav a {
+    height: 60px;
+    width: 140px;
+  }
+  #ubicaciones {
+    display: flex;
+    text-align: center;
+  }
+  #mapa {
+    background-image: none;
+    height: 0px;
+    width: 0px;
+  }
+  .titulo {
+    top: 2.5%;
+    left: 2.5%;
+    height: 0%;
+  }
+  .titulo h3 {
+    margin: 0px;
+  }
+  .provincias {
+    top: 30%;
+    left: 0%;
+    height: 0%;
+  }
+  .up a {
+    padding: 0.75rem 0.75rem;
+  }
+  #menu_desplegable{
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+  #logo {
+    font-size: 00.75rem;
+    margin-left: 10%;
+  }
+  #menu {
+    font-size: 00.75rem;
+    margin-right: 5%;
+    margin-left: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  #menu ul li {
+    display: block;
+  }
+  #caja_fija {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  #caja_fija p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  #imagen_boton {
+    background-image: url(imagenes/portada2.jpg);
+    background-size: cover;
+  }
+  #imagen_boton div {
+    top: 85%;
+  }
+  #imagen_boton div a {
+    font-size: 0.7rem;
+    padding: 15px;
+    background-color: hsl(200, 76%, 73%);
+  }
+  #nosotros {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #nosotros div {
+    margin: 5%;
+    width: auto;
+    height: 300px;
+  }
+  #datos_paciente {
+    height: auto;
+  }
+  #datos_paciente aside {
+    font-size: 0.78rem;
+  }
+  #turnos {
+    justify-content: center;
+    height: auto;
+  }
+  #nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 5%;
+  }
+  #nav a {
+    height: 60px;
+    width: 140px;
+  }
+  #mapa {
+    background-image: none;
+    height: 0px;
+    width: 0px;
+  }
+  .titulo {
+    top: 2.5%;
+    left: 2.5%;
+    height: 0%;
+  }
+  .titulo h3 {
+    margin: 0px;
+  }
+  .provincias {
+    top: 30%;
+    left: 5%;
+    height: 0%;
+  }
+  .up a {
+    padding: 0.75rem 0.75rem;
+  }
+  .redes a {
+    width: 65px;
+    height: 65px;
+  }
+  #menu_desplegable{
+    display: block;
+    position: sticky;
+    top: 10%;
+    left: 94.5%;
+    height: 0px;
+    width: 0px;
+    margin: 0%;
+    z-index: 40;
+  }
+  #menu_desplegable a{
+    text-decoration: none;
+    color: black;
+  }
+  .material-icons-outlined{
+    background-color: #b1aaaa;
+    border-radius: 10px;
+    margin: 0%;
+  }
+  /*#menu_flotante{
+    display: none;
+  }*/
+  #menu_flotante{
+    height:auto;
+    width: 110px;
+    padding: 8px;
+    background-color: rgb(180, 175, 175, 0.80);
+    border-radius: 10px;
+    position: relative;
+    right: 120px;
+    display: none;
+    justify-content: center;
+  }
+  #menu_flotante ul{
+    font-size: 00.88rem;
+    margin: 0px;
+    padding: 0px;
+  }
+  #menu_flotante ul li{
+    display: inline-block;
+    margin: 2px;
+  }
+  #menu_flotante ul li{
+    text-decoration: none;
+    color: #000;
+  }
+  
+}

@@ -1,0 +1,123 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>MITWISS</title>
+      <meta charset="utf-8" />
+      <meta
+        name="view-port"
+        content="width=device-width; initial-scale=1.0; maximum-scale= 1.0; user-scalable= 0;"
+      />
+      <link rel="stylesheet" href="CSS_unidad5.css" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
+        rel="stylesheet"
+      />
+      <script src="javascript_unidad5.js" type="text/javascript"></script>
+
+      <!--INICIO DEL FAVICON-->
+      <link rel=”icon” type= “image/jpg” href ="imagenes/instagram3.jpg">
+      <!--FIN DEL FAVICON-->
+    </head>
+    <body>
+      <!--Inicio de la interccion JavaScript-->
+      <div id="menu_desplegable">
+        <a href="#" onclick="hambur()"
+          ><span class="material-icons-outlined"> subject </span>
+        </a>
+        <nav id="menu_flotante">
+          <ul>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#turnos">TURNOS</a></li>
+            <li><a href="#ubicaciones">UBICACIONES</a></li>
+            <li><a href="#contactanos">CONTACTANOS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--FIN de la interccion JavaScript-->
+
+      <header>
+        <div id="logo"><h1>MITWISS</h1></div>
+        <nav id="menu">
+          <ul>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#turnos">TURNOS</a></li>
+            <li><a href="#ubicaciones">UBICACIONES</a></li>
+            <li><a href="#contactanos">CONTACTANOS</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="caja_fija">
+        <p>Centro de salud privado || MITWISS</p>
+      </section>
+      <section id="imagen_boton">
+        <div>
+          <a href="https://www.youtube.com/" target="balnk">PRESENTACION</a>
+        </div>
+      </section>
+
+      <!--Inicio de la interccion JavaScript-->
+      <section id="datos_paciente">
+        <aside>
+          <script>
+            document.write(
+              "<h3>" + "Nombre del paciente: " + nombre_paciente + "." + "</h3>"
+            );
+            document.write("<h3>" + "Edad: " + edad + "." + "</h3>");
+            document.write("<h3>" + "DNI: " + dni + "." + "</h3>");
+            document.write("<h3>" + "Prepaga: " + obra_social + "." + "</h3>");
+          </script>
+        </aside>
+      </section>
+      <!--FIN de la interccion JavaScript-->
+
+      <section id="nosotros">
+        <div class="equipo">
+          <h3>Equipo</h3>
+          <p></p>
+        </div>
+        <div class="profesionales">
+          <h3>Profesionales</h3>
+          <p></p>
+        </div>
+        <div class="instalaciones">
+          <h3>Instalaciones</h3>
+          <p></p>
+        </div>
+      </section>
+      <section id="turnos">
+        <nav id="nav">
+          <a href="" class="medico_clinico"></a
+          ><a href="" class="odontologia"></a><a href="" class="oftamologia"></a
+          ><a href="" class="dermatologia"></a>
+        </nav>
+      </section>
+      <section id="ubicaciones">
+        <div id="mapa"></div>
+        <div class="titulo"><h3></h3></div>
+        <nav class="provincias">
+          <a href="https://www.google.com.ar/maps" target="blank"></a
+          ><a href="https://www.google.com.ar/maps" target="blank"></a
+          ><a href="https://www.google.com.ar/maps" target="blank"></a
+          ><a href="https://www.google.com.ar/maps" target="blank"></a
+          ><a href="https://www.google.com.ar/maps" target="blank"></a
+          ><a href="https://www.google.com.ar/maps" target="blank"></a>
+        </nav>
+      </section>
+      <footer id="contactanos">
+        <nav class="up"><a href="#logo">INICIO</a></nav>
+        <nav class="redes">
+          <a
+            class="whatsapp"
+            href="https://web.whatsapp.com/"
+            target="blank"
+          ></a
+          ><a
+            class="instagram"
+            href="https://www.instagram.com/"
+            target="blank"
+          ></a>
+        </nav>
+      </footer>
+      <script src="DOM.js" type="text/javascript"></script>
+    </body></html
+></DOCTYPE>
